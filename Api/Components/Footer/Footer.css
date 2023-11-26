@@ -2,10 +2,11 @@
     :host {
         background: black;
         display: block;
-        padding: 10px;
-        color: #fffe;
+        padding: 30px;
+        color: #fffa;
         font: 11pt 'Arial';
         font-weight: bold;
+        margin-top: 20px;
     }
 
     #footer {
