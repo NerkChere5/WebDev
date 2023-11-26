@@ -27,6 +27,7 @@ body {
     justify-items: center;
     grid-gap: 20px;
     padding: 30px;
+    z-index: -1;
 }
 
 .item {
