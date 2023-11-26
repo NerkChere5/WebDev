@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WebDev Inc.</title>
+
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+
+        <link rel='icon' href='./Main/Icon.ico'>
+        <!-- <link rel='manifest' href='./Main/Main.webmanifest'> -->
+        <link rel='stylesheet' href='./Main/Main.css'>
+        <script type='module' src='./Main/Main.js'></script>
+    </head>
+
+    <body>
+         <div class='main'>
+            <div class='main__header'>
+                <p>Сайт объединения "Web-разработка" МКУ ДО СРДТ</p>
+                <p><span style='font-family: "Font";'>WebDev Inc.</span> — здесь сбываются мечты</p>
+            </div>
+        </div>
+
+       <x-menu></x-menu>
+
+        <div class='search'>
+            <a class='search__item' href='#description'>
+                <!-- <img src=''> -->
+                <div class='circle'></div>
+                <div>Описание</div>
+            </a>
+            <a class='search__item' href='#geography'>
+                <!-- <img src=''> -->
+                <div class='circle'></div>
+                <div>География</div>
+            </a>
+            <a class='search__item' href='#contacts'>
+                <!-- <img src=''> -->
+                <div class='circle'></div>
+                <div>Контакты</div>
+            </a>
+            <a class='search__item' href='#faq'>
+                <!-- <img src=''> -->
+                <div class='circle'></div>
+                <div>Чаво?</div>
+            </a>
+        </div>
+
+        <x-honorboard header='Доска почёта'>
+            <meta data-image='./Main/Images/photo.png' data-title='User 3' data-rank='5.0' data-status='Мастер'>
+            <meta data-image='./Main/Images/photo.png' data-title='User 1' data-rank='4.97' data-status='Помощник мастера'>
+            <meta data-image='./Main/Images/photo.png' data-title='User 2' data-rank='4.9' data-status='Ученик мастера'>
+        </x-honorboard>
+
+        <div id='description' class='section'>
+            <img class='section__sidePanel' src='./Main/Images/Left_block_greenblue.png'>
+            <div class='section__header'>Описание</div>
+            <div class='section__content'>Это место, где вы научитесь одним из самых востребованных и актульных технологиям. Здесь вы получите все необходимые знания и навыки, чтобы создавать современные и профессиональные сайты.</div>
+        </div>
+
+        <div id='geography' class='section'>
+            <div class='section__content'>
+                <div>Где нас найти?</div>
+                <div>Мы тут! &#128071;</div>
+                <iframe class='map' src='https://yandex.ru/map-widget/v1/?ll=39.020889%2C51.694953&mode=search&oid=118371386521&ol=biz&sll=39.020889%2C51.694953&source=serp_navig&sspn=0.018926%2C0.006654&text=%D0%BC%D0%BA%D1%83%20%D0%B4%D0%BE%20%D1%81%D1%80%D0%B4%D1%82&z=16'></iframe>
+                <div style='color:red;'>Внимание!</div>
+                <div>Временно мы обитаем в административной части на 2 этаже, кабинет 6.</div>
+            </div>
+            <img class='section__sidePanel' src='./Main/Images/Right_block_violeteblue.png'>
+            <div class='section__header'>География</div>
+        </div>
+
+        <div id='contacts' class='section'>
+            <div class='section__content'>
+                <div>Ещё не обзавились.</div>
+            </div>
+            <img class='section__sidePanel' src='./Main/Images/Left_block_orangepink.png'>
+            <div class='section__header'>Контакты</div>
+        </div>
+
+        <div id='faq' class='section'>
+            <div class='section__content'>
+                Loading....
+            </div>
+            <img class='section__sidePanel' src='./Main/Images/Block_whiteyellow.png'>
+            <div class='section__header'>
+                <p>Чаво?!</p>
+                <p>"Да ниЧАВО! Это для дебилов, которые не знают, что такое ЧАВО!"</p>
+                <p>© РОМАН</p>
+            </div>
+        </div>
+    </body>
+</html>

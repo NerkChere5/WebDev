@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Font';
+  src: url('../../../Main/Font.ttf');
+}
+
+
+x-menu {
+    --font__title: 'Font';
+    position: sticky;
+}
+
+body {
+    background: #efefef;
+    margin: 0px;
+}
+
+.header {
+    font: 24pt 'Arial Black';
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+a {
+    font: 18pt 'Arial';
+    color: #0009;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+}
+
+a:hover {
+    color: #000d;
+}

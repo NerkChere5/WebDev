@@ -1,0 +1,20 @@
+@layer init {
+    :host {
+        background: black;
+        display: block;
+        padding: 10px;
+        color: #fffe;
+        font: 11pt 'Arial';
+        font-weight: bold;
+    }
+
+    #footer {
+        display: grid;
+        grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .dummy {
+        height: 11pt;
+    }
+}

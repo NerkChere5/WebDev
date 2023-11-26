@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Font';
+  src: url('../../../Main/Font.ttf');
+}
+
+
+x-menu {
+    --font__title: 'Font';
+}
+
+body {
+    margin: 0px;
+    background: #efefef;
+}
+
+.main {
+    background: url('./Images/Background.png') center / cover no-repeat;
+    display: grid;
+    height: 100vh;
+}
+
+.main__header {
+    align-self: center;
+    padding: 30px;
+    padding-top: 0;
+    width: 55%;
+    font: 24pt 'Arial Black';
+}

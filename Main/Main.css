@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Font';
+  src: url('./Font.ttf');
+}
+
+
+x-menu {
+    --font__title: 'Font';
+}
+
+body {
+    margin: 0px;
+    background: #efefef;
+}
+
+.main {
+    background: url('./Images/Background.png') center / cover no-repeat;
+    display: grid;
+    height: 100vh;
+}
+
+.main__header {
+    align-self: center;
+    padding: 30px;
+    padding-top: 0;
+    width: 55%;
+    font: 24pt 'Arial Black';
+}
+
+.search {
+    background: #000;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    padding: 20px 10px 10px;
+    align-items: center;
+}
+
+.search__item {
+    color: #bdbdbdc9;
+    display: grid;
+    font: 12pt 'Arial Black';
+    grid-gap: 10px;
+    justify-items: center;
+    text-decoration: none;
+}
+
+.search__item:hover {
+    color: #fff;
+}
+
+.search__item:hover .circle {
+    border-color: #fff;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 1px solid #bdbdbdc9;
+}
+
+.section {
+    display: grid;
+    grid-auto-flow: column;
+    overflow: hidden;
+}
+
+.section__sidePanel {
+    grid-area: 1 / 1 / 1 / 1;
+    height: 500px;
+    transform: translate(-20px, -5px);
+    z-index: -1;
+    user-select: none;
+}
+
+.section__header {
+    color: #fff;
+    font: 34pt 'Arial Black';
+    grid-area: 1 / 1 / 1 / 1;
+    height: 500px;
+    transform: rotateZ(-10deg) translate(52px, 146px);
+    user-select: none;
+    z-index: -1;
+}
+
+.section__content {
+    align-self: center;
+    font: 12pt 'Arial Black';
+    justify-self: center;
+    text-align: center;
+}
+
+.map {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 10px 3px #adadad91;
+    display: block;
+    height: 400px;
+    margin: 15px auto 0;
+    width: 560px;
+}
+
+.section:nth-of-type(2n) {
+    .section__sidePanel {
+        justify-self: end;
+        grid-area: 1 / 2 / 1 / 2;
+        transform: translateX(20px);
+    }
+
+    .section__header {
+        grid-area: 1 / 2 / 1 / 2;
+        justify-self: end;
+        transform: rotateZ(10deg) translate(-48px, 160px);
+    }
+}
+
+#contacts {
+    margin-top: 40px;
+}
+
+#faq {
+    .section__sidePanel {
+        transform: scale(-1, -1) translateX(-24px);
+        width: 40vw;
+    }
+
+    .section__header {
+        width: 30vw;
+        transform: rotateZ(354deg) translate(-57px, -31px);
+        color: #000d;
+        font-size: 28pt;
+    }
+
+    .section__header p:first-of-type {
+        font-size: 34pt;
+    }
+}
+
+
+
+@media(max-width: 750px) {
+    .search {
+        grid-gap: 30px;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        padding: 20px 0;
+    }
+}

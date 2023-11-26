@@ -1,0 +1,46 @@
+@layer init {
+    :host {
+        --color_img_circle: #000;
+    }
+
+
+    :host {
+        display: block;
+        font: 16pt 'Arial';
+        padding: 10px;
+    }
+
+    .header {
+        font: 24pt 'Arial Black';
+    }
+
+    #board {
+        align-items: center;
+        display: grid;
+        grid-gap: 20px;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .items {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+        width: 100%;
+    }
+
+   .item_image {
+        border-radius: 100%;
+        border: 1px solid var(--color_img_circle);
+        height: 100px;
+        margin-bottom: 10px;
+        width: 100px;
+   }
+
+   .item {
+        align-items: center;
+        display: grid;
+        grid-gap: 1px;
+        justify-items: center;
+   }
+}

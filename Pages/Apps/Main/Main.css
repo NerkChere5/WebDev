@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Font';
+  src: url('../../../Main/Font.ttf');
+}
+
+
+x-menu {
+    --font__title: 'Font';
+    position: sticky;
+}
+
+body {
+    background: #efefef;
+    margin: 0px;
+}
+
+.header {
+    font: 24pt 'Arial Black';
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.main {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+.item {
+    display: grid;
+    justify-items: center;
+    grid-gap: 10px;
+    font: 14pt 'Arial';
+    color: #000d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.item * {
+    opacity: 0.8;
+}
+
+.item:hover * {
+    opacity: 1;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
