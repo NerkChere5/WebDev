@@ -1,0 +1,3 @@
+header set Access-Control-Allow-Origin "*"
+php_value error_reporting 32757
+AddType application/download .yaml
