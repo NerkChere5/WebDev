@@ -7,6 +7,8 @@
         font: 11pt 'Arial';
         font-weight: bold;
         margin-top: 20px;
+        position: sticky;
+        top: 100%;
     }
 
     #footer {

@@ -4,6 +4,10 @@
 }
 
 
+:root {
+    height: 100%;
+}
+
 x-menu {
     --font__title: 'Font';
 }
@@ -11,6 +15,7 @@ x-menu {
 body {
     margin: 0px;
     background: #efefef;
+    height: 100%;
 }
 
 .main {

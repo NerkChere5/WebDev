@@ -4,6 +4,10 @@
 }
 
 
+:root {
+    height: 100%;
+}
+
 x-menu {
     --font__title: 'Font';
     position: sticky;
@@ -12,6 +16,7 @@ x-menu {
 body {
     background: #efefef;
     margin: 0px;
+    height: 100%;
 }
 
 .header {

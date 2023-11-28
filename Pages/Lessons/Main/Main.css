@@ -27,13 +27,16 @@ body {
 }
 
 a {
-    font: 18pt 'Arial';
+    font: 14pt 'Arial';
     color: #0009;
     text-decoration: none;
     font-weight: bold;
-    text-align: center;
-    display: block;
-    margin-top: 40px;
+}
+
+ol {
+    display: grid;
+    justify-content: start;
+    grid-gap: 10px;
 }
 
 a:hover {
