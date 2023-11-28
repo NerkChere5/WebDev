@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Font';
+  src: url('../../../Main/Font.ttf');
+}
+
+:root {
+    height: 100%;
+}
+
+
+x-menu {
+    --font__title: 'Font';
+    position: sticky;
+}
+
+body {
+    background: #efefef;
+    margin: 0px;
+    height: 100%;
+}
+
+.header {
+    font: 24pt 'Arial Black';
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+li {
+    font: 14pt 'Arial';
+    color: #0009;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol {
+    display: grid;
+    justify-content: start;
+    grid-gap: 10px;
+}
+
+a:hover li {
+    color: #000d;
+}
+
+
+.back:hover {
+    color: #000d;
+}
+
+.back {
+    color: #0009;
+    font: 16pt 'Arial';
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.wish {
+    font: 16pt 'Times New Roman';
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+h2 {
+    color: #000c;
+    font: 20pt 'Arial Black';
+    text-align: center;
+}
+
+
+
+
+.example_box {
+    border: 6px solid #4e4e4edd;
+    display: table;
+    margin: auto;
+    padding: 62px;
+}
+
+.Clock {
+    --Clock_size: 500px;
+
+    align-items: center;
+    background: linear-gradient(135deg, #fff, #444);
+    border: 30px solid #222;
+    border-radius: 100%;
+    box-shadow:
+        inset 10px 10px 10px #0008,
+        inset -10px -10px 10px #fff8,
+        20px 20px 20px #0008
+    ;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    height: var(--Clock_size);
+    justify-items: center;
+    padding: 30px;
+    width: var(--Clock_size);
+}
+
+.Clock * {
+    grid-area: 1 / 1;
+}
+
+.Clock__arrow {
+    --Clock__arrow_angle: 0;
+    --Clock__arrow_shadow_x: 1;
+    --Clock__arrow_shadow_y: 1;
+
+    background: #222;
+    border: 1px solid #fff2;
+    border-radius: 100%;
+    box-shadow: calc(var(--Clock__arrow_shadow_x) * 5px) calc(var(--Clock__arrow_shadow_y) * 5px) 5px #0008;
+    transform-origin: 50% 80%;
+    transform: translateY(-30%) rotate(calc(var(--Clock__arrow_angle) * 1deg));
+}
+
+.Clock__arrow_hour {
+    height: 40%;
+    width: 3%;
+}
+
+.Clock__arrow_minute {
+    height: 55%;
+    width: 2%;
+}
+
+.Clock__arrow_second {
+    background: #d00;
+    height: 60%;
+    width: 1%;
+}
+
+.Clock__arrow_second_circle {
+    background: #d00;
+    border-radius: 100%;
+    height: 5%;
+    width: 5%;
+    z-index: 1;
+}
+
+.Clock__meta_arrow_second_circle {
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px #0008;
+    height: 5%;
+    width: 5%;
+}
+
+.Clock__point {
+    --Clock__point_angle: 0;
+    --Clock__point_size: 1%;
+
+    background: #222;
+    border-radius: 100% 100% 0 0;
+    height: 2%;
+    transform:
+        rotate(calc(var(--Clock__point_angle) * 1deg))
+        translateY(calc(-1 * var(--Clock_size) / 2 - 50%))
+    ;
+    width: 0.5%;
+}
+
+.Clock__point:nth-child(5n) {
+    height: 4%;
+    width: 1.5%;
+}
