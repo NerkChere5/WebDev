@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Font';
-  src: url('../../../Main/Font.ttf');
+  src: url('../../../../Main/Font.ttf');
 }
 
 :root {
@@ -78,20 +78,20 @@ h2 {
     border: 6px solid #4e4e4edd;
     display: table;
     margin: auto;
-    padding: 62px;
+    padding: 20px;
 }
 
 .Clock {
-    --Clock_size: 500px;
+    --Clock_size: 50vh;
 
     align-items: center;
     background: linear-gradient(135deg, #fff, #444);
-    border: 30px solid #222;
+    border: calc(var(--Clock_size) * 0.06) solid #222;
     border-radius: 100%;
     box-shadow:
-        inset 10px 10px 10px #0008,
-        inset -10px -10px 10px #fff8,
-        20px 20px 20px #0008
+        inset 5px 5px 5px #0008,
+        inset -5px -5px 5px #fff8,
+        7px 7px 7px #0008
     ;
     display: grid;
     grid-template: 1fr / 1fr;

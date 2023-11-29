@@ -13,11 +13,36 @@
 
     #footer {
         display: grid;
-        grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+        grid-template: repeat(5, auto) / repeat(2, 1fr);
         grid-gap: 10px;
     }
 
     .dummy {
         height: 11pt;
+    }
+
+    #icon_vk {
+        height: 40px;
+    }
+
+    #icon_youtube {
+        height: 45px;
+    }
+
+    .contacts {
+        align-items: center;
+        display: grid;
+        grid-area: 2 / 2 / 4 / 2;
+        grid-auto-flow: column;
+        grid-gap: 20px;
+        justify-content: left;
+    }
+
+    img {
+        opacity: 0.75;
+    }
+
+    img:hover {
+        opacity: 1;
     }
 }
