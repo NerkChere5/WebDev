@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Font';
-  src: url('../../../../Main/Font.ttf');
+  src: url('../../../../../Main/Font.ttf');
 }
 
 :root {
@@ -8,10 +8,11 @@
 }
 
 
-object {
-    width: 80vw;
-    margin: 0 5vw;
-    height: 100vh;
+.text {
+    font: 14pt 'Arial';
+    /* color: #0009; */
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 x-menu {
@@ -27,15 +28,24 @@ body {
 
 .header {
     font: 24pt 'Arial Black';
+    margin: 10px auto;
     text-align: center;
     width: 90%;
-    margin: 10px auto;
 }
 
 li {
-    font: 14pt 'Arial';
     color: #0009;
     font-weight: bold;
+    font: 14pt 'Arial';
+}
+
+iframe {
+    background: #fff;
+    border: 9px solid #aaf;
+    display: block;
+    height: 100vh;
+    margin: 10px auto;
+    width: 90vw;
 }
 
 a {
