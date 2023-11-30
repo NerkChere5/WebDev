@@ -55,14 +55,15 @@ a:hover li {
     color: #0009;
     font: 16pt 'Arial';
     font-weight: bold;
-    margin-left: 20px;
+    margin: 20px;
+    display: block;
 }
 
 .wish {
     font: 16pt 'Times New Roman';
     font-weight: bold;
     font-style: italic;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 h2 {
