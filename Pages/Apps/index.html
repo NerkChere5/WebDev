@@ -10,6 +10,7 @@
         <link rel='icon' href='../../Main/Icon.ico'>
         <link rel='stylesheet' href='./Main/Main.css'>
         <script type='module' src='./Main/Main.js'></script>
+        <script type='module' src='../../Api/Components/Repeater/Repeater.js'></script>
     </head>
 
     <body>
@@ -17,7 +18,7 @@
 
         <div class='header'>На этой странице ты можешь скачать всё для успешной web-разработки.</div>
 
-        <div class='main'>
+        <!-- <div class='main'>
             <a class='item' href='./Apps/SublimeText.zip'>
                 <img src='./Images/SublimeText.png'>
                 <div class='item_title'>SublimeText</div>
@@ -34,7 +35,47 @@
                 <img src='./Images/StrongholdCrusader.png'>
                 <div class='item_title'>Stronghold Crusader</div>
             </a>
-        </div>
+        </div> -->
+
+        <x-repeater class='main' replacement='repeater'>
+            <template hidden Repeater__delegate>
+                <a class='item' href='${repeater: url}'>
+                    <img src='${repeater: image_url}'>
+                    <span>${repeater: name} - ${repeater: data.a}</span>
+                </a>
+            </template>
+
+            <template Repeater__model>
+                <script>
+                    [
+                        {
+                            image_url: './Images/SublimeText.png',
+                            name: 'SublimeText',
+                            url: './Apps/SublimeText.zip',
+
+                            data: {
+                                a: 123,
+                            }
+                        },
+                        {
+                            image_url: './Images/UsbWebServer.png',
+                            name: 'UsbWebServer',
+                            url: './Apps/UsbWebServer.zip',
+                        },
+                        {
+                            image_url: './Images/FireFox.svg',
+                            name: 'Mozilla FireFox',
+                            url: 'https://www.mozilla.org/ru/firefox/all/#product-desktop-release',
+                        },
+                        {
+                            image_url: './Images/StrongholdCrusader.png',
+                            name: 'SublimeText',
+                            url: './Apps/StrongholdCrusader.zip',
+                        },
+                    ]
+                </script>
+            </template>
+        </x-repeater>
 
         <x-footer></x-footer>
     </body>
